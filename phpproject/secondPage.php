@@ -1,8 +1,8 @@
-
+<?php
     date_default_timezone_set('Asia/Kolkata');
     include_once 'include/dbh.inc.php'; 
     include 'include/comment.inc.php'; 
-
+?>
   <html>
    <head>
        <title></title>
@@ -20,7 +20,7 @@
         <div class="main-box">
             <div class="box">
                 <h2>Create post</h2>
-    
+  <?php  
            echo
             "<form action='".setComments($conn)."' method='post' >
                 
@@ -43,12 +43,12 @@
                 
                 <button id='sign-out' onclick='signOut()' class='btn1'>sign out</button>
             </form>";
-    
+    ?>
             </div>   
        </div>
             
            
-      
+     <?php 
          
       getComments($conn);    
       function getComments($conn){
@@ -79,6 +79,6 @@
             </div>";
       }
       }
-       
+     ?>  
    </body>
 </html>
