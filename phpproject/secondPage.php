@@ -1,8 +1,8 @@
-<?php 
+<?php
     date_default_timezone_set('Asia/Kolkata');
     include_once 'include/dbh.inc.php'; 
     include 'include/comment.inc.php'; 
- ?>
+?> 
   <html>
    <head>
        <title></title>
